@@ -15,7 +15,6 @@ the environment.
 3. Set the **Quantity** equal to _1_ and then click the **Add To Cart** button.
 
 !!! note "Note"
-
    Deployments of OpenShift on Power through the ITZ are pre-configured in terms of their sizing. By default, CPU, memory, and number of instances provided per deployment are fixed.
 
    This simplifies the provisioning process in the majority of circumstances (particularly for simple demonstration purposes such as these). However, there may be occasions where you will require a more robust environment — either for your own training or for a client demonstration. If you require a custom configuration, select the **Request Custom Configuration** link as shown.
@@ -29,7 +28,6 @@ Next you will configure the OpenShift cluster size and reservation period.
 6. **Used For** is set to _Self Education_.
 
 !!! note "Note"
-
    Reserve only as much time as you need to complete this lab. You will need an estimate 60 to 90 minutes from start to finish. However, you can safely reserve several days of time if you feel you might benefit from it.
 
 7. When satisfied, click **Reserve Project**.
@@ -54,7 +52,6 @@ details you’ll need to know in order to connect with the OpenShift v4.X cluste
 3. Open a new browser tab or window and connect to the OpenShift cluster using the **URL** from **Step 1** and the **credentials** from **Step 2**.
 
 !!! warning "Warning"
-
    Depending on your browser, you may be presented with a warning similar to the one shown here. Ignore the warning. If you are using Safari, click **Visit This Website** button (as shown) to bypass the warning. You may be asked to enter your **MacOS password** to make the necessary Certificate Trust Settings changes.
 
 !!! note "Note"
@@ -72,7 +69,6 @@ details you’ll need to know in order to connect with the OpenShift v4.X cluste
 Congratulations — the OCP v4.X cluster is now up and running. You’re ready to get to work.
 
 !!! note "Important"
-
    Use the accompanying lab guide to complete this course, and remember to record when prompted (with screenshots or in a text log) if asked to do so. You’ll need these logs to pass the certification test.
 
 Refer to the [Certification section](../certification.md) of this document for instructions on how to receive credit for completing this lab.

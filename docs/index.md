@@ -1,17 +1,16 @@
-# Welcome to MkDocs
+# Lab objectives
 
-For full documentation visit [mkdocs.org](https://www.mkdocs.org).
+Designed for sellers and business partners, this hands-on lab will familiarize you with the OpenShift Container Platform (OCP) v4.X on IBM Cloud infrastructure by putting you in the shoes of both an Administrator and a Developer.
 
-## Commands
+Throughout the course of the lab, you will:
 
-* `mkdocs new [dir-name]` - Create a new project.
-* `mkdocs serve` - Start the live-reloading docs server.
-* `mkdocs build` - Build the documentation site.
-* `mkdocs -h` - Print help message and exit.
+- Utilize the Red Hat OpenShift Container Platform web console to perform basic operations.
+- Deploy a sample application from the Red Hat OpenShift Container Platform web console.
+- Simulate node failures to test cluster resiliency and load balancing capabilities.
 
-## Project layout
+You will need an estimated 60-90 minutes to complete this lab. Keep this in mind when requesting access to the shared OpenShift v4.X cluster from the IBM Technology Zone (ITZ) during the Prerequisites stage of this lab.
 
-    mkdocs.yml    # The configuration file.
-    docs/
-        index.md  # The documentation homepage.
-        ...       # Other markdown pages, images and other files.
+!!! note "Important"
+   Reserve only for the time you need. This is a finite resource and limiting your reservation time ensures more IBMers can leverage the resources for their client engagements.
+
+Thank you!

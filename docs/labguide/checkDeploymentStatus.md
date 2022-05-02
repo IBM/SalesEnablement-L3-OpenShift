@@ -5,7 +5,6 @@ The OpenShift web console provides valuable information about the status of ever
 3. Click the **Resources** tab in the deployment sidebar.
 
 !!! success "Record this!"
-
    Record the **Service port** and **Pod Port** numbers displayed under the **Resources** tab.
 
 4. From the displayed list of **Pods**, note how many containers have the **Running** status. You should see only one at this time.
@@ -13,7 +12,6 @@ The OpenShift web console provides valuable information about the status of ever
 OpenShift leverages the Kubernetes concept of a **pod**, which is one or more containers deployed together on one host, and is the smallest compute unit that can be defined, deployed, and managed.
 
 !!! info "Learn more"
-
    You can learn more about the OpenShift and Kubernetes terms and concepts discussed in this lab. Check out these helpful sections of the OpenShift documentation:
 
    [Projects and Users](https://docs.openshift.com/online/pro/architecture/core_concepts/projects_and_users.html)
@@ -26,7 +24,6 @@ OpenShift leverages the Kubernetes concept of a **pod**, which is one or more co
 7. Scroll down the **Details** tab and record the **IP Addresss** and **Restart Policy** for the pod.
 
 !!! success "Record this!"
-
     Record the **IP Address** and **Restart Policy** for your pod.
 
 8. Click the **Terminal** tab.
@@ -41,7 +38,6 @@ hostname
 ```
 
 ??? example "Example output"
-
    sh-4.2$ hostname
    nginx-sample-869bf677b6-7wnzs
    sh-4.2$
@@ -53,7 +49,6 @@ hostname -i
 ```
 
 ??? example "Example output"
-
    sh-4.2$ hostname -i
    172.30.234.2
    sh-4.2$

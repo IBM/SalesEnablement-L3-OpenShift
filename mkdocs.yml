@@ -9,7 +9,6 @@ repo_name: IBM/SalesEnablement-L3-OpenShift
 docs_dir: docs
 
 nav:
-  - 'Lab Objectives': 'objectives.md'
   - 'Certification': 'certification.md'
   - 'Prerequisites': 'prerequisites.md'
   - Lab Guide:

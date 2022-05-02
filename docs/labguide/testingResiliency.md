@@ -7,7 +7,6 @@ In the previous section, you discovered that the pod restart policy for your dep
 3. To simulate a pod failure, terminate the pod. From the Actions menu, click **Delete Pod**.
 
 !!! note
-
    In the next step, you will confirm the deletion.  When you do so, the OpenShift web console will reload with a view of all pods.  To better view the deletion and the restart policy in action, immediately after confirming the deletion, click **Topology** in the left-hand taskbar and watch the NGINX deployment icon.
 
 4. Confirm the action by clicking **Delete**.

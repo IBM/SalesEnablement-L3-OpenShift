@@ -25,6 +25,7 @@ done
 ```
 
 ??? example "Sample output"
+    NEED SAMPLE OUTPUT here
 
 Remember to substitute the demo-route URL with the one you recorded in Step 9 of [Balancing network traffic](balancingNetworkTraffic.md). Take note of how the application routing is balanced equally (50:50) between _nginx-server-1_ and _nginx-server-2_ according to the route definition created earlier!
 
