@@ -1,0 +1,77 @@
+# Project info
+site_name: IBM Sales Enablement - L3 OpenShift Basics
+site_description: This lab provides a basic overview of Red Hat OpenShift.
+site_author: Andrew R. Jones (andrewj@us.ibm.com)
+copyright: Copyright &copy; 2022 IBM
+
+# Repository
+repo_name: IBM/SalesEnablement-L3-OpenShift
+docs_dir: docs
+
+nav:
+  - 'Lab Objectives': 'objectives.md'
+  - 'Certification': 'certification.md'
+  - 'Prerequisites': 'prerequisites.md'
+  - Lab Guide
+    - 'Getting Started': 'labguide/gettingStarted.md'
+    - 'Deploy an HTTP Server': 'labguide/deployHTTPServer.md'
+    - 'Check Deployment Status': 'labguide/checkDeploymentStatus.md'
+    - 'Testing Resiliency': 'labguide/testingResiliency.md'
+    - 'Scaling Deployments': 'labguide/scalingDeployments.md'
+    - 'Deploying Multiple Apps': 'labguide/deployingMultipleApps.md'
+    - 'Balancing Network Traffic': 'labguide/balancingNetworkTraffic.md'
+    - 'Testing Load Balancing': 'labguide/testingLoadBalancing.md'
+  - 'Summary': 'summary.md'
+
+theme:
+  name: material
+  features:
+    - navigation.instant
+    - navigation.tracking
+    - navigation.top
+    - content.code.annotate
+  palette:
+    - media: "(prefers-color-scheme: light)"
+      scheme: default
+      toggle:
+        icon: material/toggle-switch-off-outline
+        name: Switch to dark mode
+    - media: "(prefers-color-scheme: dark)"
+      scheme: slate
+      toggle:
+        icon: material/toggle-switch
+        name: Switch to light mode
+
+plugins:
+    - search
+    - mkdocs-video
+    - macros
+
+extra:
+  generator: false
+
+markdown_extensions:
+  - sane_lists
+  - pymdownx.details
+  - admonition
+  - pymdownx.highlight:
+      anchor_linenums: true
+  - pymdownx.inlinehilite
+  - pymdownx.snippets
+  - pymdownx.superfences
+  - pymdownx.keys
+
+
+extra:
+  learningplan:
+    name: "IBM Cloud OpenShift Basics Level 3"
+    url: "https://yourlearning/"
+  tz_environment:
+    name: "IBM Cloud Satellite - Sales Enablment L3"
+    url: "https://techzone.ibm.com/my/reservations"
+    uuid_label: "Demo-UUID"
+  account: "2435442 - ITZ - Satellite"
+  ibm:
+    cluster_name: NH-Training-cluster-NA
+    cluster_id: c9o246lw071encdi8sh0
+    ingress: nh-training-cluster-na-222b3514854c2221251113b2b051506c-0000.us-east.containers.appdomain.cloud
