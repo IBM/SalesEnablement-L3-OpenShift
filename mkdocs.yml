@@ -12,7 +12,7 @@ nav:
   - 'Lab Objectives': 'objectives.md'
   - 'Certification': 'certification.md'
   - 'Prerequisites': 'prerequisites.md'
-  - Lab Guide
+  - Lab Guide:
     - 'Getting Started': 'labguide/gettingStarted.md'
     - 'Deploy an HTTP Server': 'labguide/deployHTTPServer.md'
     - 'Check Deployment Status': 'labguide/checkDeploymentStatus.md'
