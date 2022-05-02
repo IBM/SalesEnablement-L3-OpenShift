@@ -13,7 +13,7 @@ nav:
   - 'Prerequisites': 'prerequisites.md'
   - Lab Guide:
     - 'Getting Started': 'labguide/gettingStarted.md'
-    - 'Deploy an HTTP Server': 'labguide/deployHttpServer.md'
+    - 'Deploy an HTTP Server': 'labguide/deployHTTPServer.md'
     - 'Check Deployment Status': 'labguide/checkDeploymentStatus.md'
     - 'Testing Resiliency': 'labguide/testingResiliency.md'
     - 'Scaling Deployments': 'labguide/scalingDeployments.md'
