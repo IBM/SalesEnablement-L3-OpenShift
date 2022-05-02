@@ -17,7 +17,7 @@
     
     
       
-        <title>deployHttpServer - IBM Sales Enablement - L3 OpenShift Basics</title>
+        <title>Deploy an HTTP Server - IBM Sales Enablement - L3 OpenShift Basics</title>
       
     
     
@@ -65,6 +65,11 @@
     <label class="md-overlay" for="__drawer"></label>
     <div data-md-component="skip">
       
+        
+        <a href="#deploy-a-containerized-application" class="md-skip">
+          Skip to content
+        </a>
+      
     </div>
     <div data-md-component="announce">
       
@@ -94,7 +99,7 @@
         <div class="md-header__topic" data-md-component="header-topic">
           <span class="md-ellipsis">
             
-              deployHttpServer
+              Deploy an HTTP Server
             
           </span>
         </div>
@@ -202,21 +207,6 @@
   
   
     <li class="md-nav__item">
-      <a href="../../objectives/" class="md-nav__link">
-        Lab Objectives
-      </a>
-    </li>
-  
-
-    
-      
-      
-      
-
-  
-  
-  
-    <li class="md-nav__item">
       <a href="../../certification/" class="md-nav__link">
         Certification
       </a>
@@ -245,23 +235,25 @@
 
   
   
+    
+  
   
     
-    <li class="md-nav__item md-nav__item--nested">
+    <li class="md-nav__item md-nav__item--active md-nav__item--nested">
       
       
-        <input class="md-nav__toggle md-toggle" data-md-toggle="__nav_4" type="checkbox" id="__nav_4" >
+        <input class="md-nav__toggle md-toggle" data-md-toggle="__nav_3" type="checkbox" id="__nav_3" checked>
       
       
       
       
-        <label class="md-nav__link" for="__nav_4">
+        <label class="md-nav__link" for="__nav_3">
           Lab Guide
           <span class="md-nav__icon md-icon"></span>
         </label>
       
       <nav class="md-nav" aria-label="Lab Guide" data-md-level="1">
-        <label class="md-nav__title" for="__nav_4">
+        <label class="md-nav__title" for="__nav_3">
           <span class="md-nav__icon md-icon"></span>
           Lab Guide
         </label>
@@ -285,11 +277,21 @@
               
   
   
+    
   
-    <li class="md-nav__item">
-      <a href="../deployHTTPServer.md" class="md-nav__link">
+  
+    <li class="md-nav__item md-nav__item--active">
+      
+      <input class="md-nav__toggle md-toggle" data-md-toggle="toc" type="checkbox" id="__toc">
+      
+      
+        
+      
+      
+      <a href="./" class="md-nav__link md-nav__link--active">
         Deploy an HTTP Server
       </a>
+      
     </li>
   
 
@@ -407,15 +409,32 @@
               </div>
             
             
+              
+              <div class="md-sidebar md-sidebar--secondary" data-md-component="sidebar" data-md-type="toc" >
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+
+<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
+  
+  
+  
+    
+  
+  
+</nav>
+                  </div>
+                </div>
+              </div>
+            
           
           <div class="md-content" data-md-component="content">
             <article class="md-content__inner md-typeset">
               
                 
 
-  <h1>deployHttpServer</h1>
-
-<p>Using the OpenShift web console you just opened in the <a href="../gettingStarted/">Getting Started section</a>, use the steps below to deploy a container running the NGINX image.  NGINX is a free and open-source web server. You can learn more about <a href="https://en.wikipedia.org/wiki/Nginx" title="NGINX on Wikipedia">NGINX on Wikipedia</a> and <a href="https://www.nginx.com/">here</a>.</p>
+<h1 id="deploy-a-containerized-application">Deploy a containerized application</h1>
+<p>Using the OpenShift web console you just opened in the <a href="../gettingStarted/">Getting Started section</a>, use the steps below to deploy an <strong>application</strong>. For this lab, the application is a <strong>web server</strong> that is running in a  container running the NGINX image.  NGINX is a free and open-source web server. You can learn more about <a href="https://en.wikipedia.org/wiki/Nginx">NGINX on Wikipedia</a> and <a href="https://www.nginx.com/">here</a>.</p>
 <ol>
 <li>In the top-left of the OpenShift web console, locate the <strong>Administrator/Developer</strong> toggle button. You will use this toggle frequently over the course of the hands-on lab to cycle between Administrator and Developer perspectives within the OCP cluster. Select the <strong>Developer</strong> perspective.</li>
 <li>If not already selected, click the <strong>Project</strong> pull down menu and select the <strong>Project name</strong> created for you. You can find this name in your ITZ reservation e-mail or on the ITZ project page.</li>
@@ -450,6 +469,41 @@
       </main>
       
         <footer class="md-footer">
+  
+    <nav class="md-footer__inner md-grid" aria-label="Footer">
+      
+        
+        <a href="../gettingStarted/" class="md-footer__link md-footer__link--prev" aria-label="Previous: Getting Started" rel="prev">
+          <div class="md-footer__button md-icon">
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11h12z"/></svg>
+          </div>
+          <div class="md-footer__title">
+            <div class="md-ellipsis">
+              <span class="md-footer__direction">
+                Previous
+              </span>
+              Getting Started
+            </div>
+          </div>
+        </a>
+      
+      
+        
+        <a href="../checkDeploymentStatus/" class="md-footer__link md-footer__link--next" aria-label="Next: Check Deployment Status" rel="next">
+          <div class="md-footer__title">
+            <div class="md-ellipsis">
+              <span class="md-footer__direction">
+                Next
+              </span>
+              Check Deployment Status
+            </div>
+          </div>
+          <div class="md-footer__button md-icon">
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M4 11v2h12l-5.5 5.5 1.42 1.42L19.84 12l-7.92-7.92L10.5 5.5 16 11H4z"/></svg>
+          </div>
+        </a>
+      
+    </nav>
   
   <div class="md-footer-meta md-typeset">
     <div class="md-footer-meta__inner md-grid">
