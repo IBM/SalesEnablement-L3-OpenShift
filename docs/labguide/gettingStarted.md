@@ -75,6 +75,6 @@ Congratulations — the OCP v4.X cluster is now up and running. You’re ready t
 
    Use the accompanying lab guide to complete this course, and remember to record when prompted (with screenshots or in a text log) if asked to do so. You’ll need these logs to pass the certification test.
 
-Refer to the [Certification section](../certificaiton.md) of this document for instructions on how to receive credit for completing this lab.
+Refer to the [Certification section](../certification.md) of this document for instructions on how to receive credit for completing this lab.
 
 Good luck!
