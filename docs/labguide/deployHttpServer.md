@@ -19,6 +19,6 @@ Your browser will refresh to the **Topology** view.  Notice the view now shows a
 8. Click the **Open URL** button on the edge of the deployment icon to open the default route created during the deployment. This will launch as a new tab or window in your web browser.
 
 !!! Success "Record this!"
-   Record the text displayed in the new browser tab/window after you click the **Open URL** button of the NGINX deployment icon.
+    Record the text displayed in the new browser tab/window after you click the **Open URL** button of the NGINX deployment icon.
 
 Your NGINX web server is now alive and well.  Next, learn to scale and manipulate this containerized HTTP server.

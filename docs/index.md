@@ -1,16 +1,32 @@
-# Lab objectives
+# Welcome to the Red Hat OpenShift on IBM Cloud sales enablement lab
 
-Designed for sellers and business partners, this hands-on lab will familiarize you with the OpenShift Container Platform (OCP) v4.X on IBM Cloud infrastructure by putting you in the shoes of both an Administrator and a Developer.
+This lab is divided into multiple sections or chapters. After learning about the associated certification process and prerequisites to the lab, you will dive right into the Lab Guide and get started learning more about Red Hat OpenShift.
 
-Throughout the course of the lab, you will:
+Use the table of contents at the left-hand side of this page to navigate each section, or simply use the "Next" link at the bottom of each page to continue.
 
-- Utilize the Red Hat OpenShift Container Platform web console to perform basic operations.
-- Deploy a sample application from the Red Hat OpenShift Container Platform web console.
-- Simulate node failures to test cluster resiliency and load balancing capabilities.
 
-You will need an estimated 60-90 minutes to complete this lab. Keep this in mind when requesting access to the shared OpenShift v4.X cluster from the IBM Technology Zone (ITZ) during the Prerequisites stage of this lab.
+!!! note
+    THIS NEEDS UPDATING!!! Note, you can access this demonstration environment at any time via IBM Tech Zone <a href="https://techzone.ibm.com/collection/se-l3-ibm-cloud-satellite" target="_blank">https://techzone.ibm.com/collection/se-l3-ibm-cloud-satellite</a>. Once you are comfortable with the environment, it can quickly and easily be leveraged for customer demonstrations. In most cases, depending on your audience, the **Deploy an OpenShift application** section will be most appropriate for customer demonstrations.
 
-!!! note "Important"
-   Reserve only for the time you need. This is a finite resource and limiting your reservation time ensures more IBMers can leverage the resources for their client engagements.
+THIS NEEDS UPDATING!!! You can also leverage the IBM Cloud Satellite collection <a href="https://techzone.ibm.com/collection/SetupIBMCloudSatelliteLocationInAWS" target="_blank">here</a> for longer client demonstrations or proof-of-concepts. Be aware, additional provisioning time and manual configurations are required.  Refer to the documentation in the collection.
 
-Thank you!
+# Helpful tips for using this demonstration environment
+
+This demonstration script is organized in parts and chapters. Most chapters contain numbered steps, which are typically actions that you will perform.
+
+Throughout the lab, you will see images that are examples of what you should be seeing during the step. In some instances, you will see the following styles of highlighting in those images:
+
+- Action highlight box: Illustrates where you should click,  enter, or select an item:
+
+![](_attachments/ClickActionRectangle.png)
+
+- Path/explore highlight box: Illustrates one of two things:
+
+  - the path to follow to get to a specific location in the user interface
+  - areas to explore on your own
+
+![](_attachments/PathExploreHighlight.png)
+
+- Copy to clipboard box: Text that is copied to your clipboard. Click the copy icon (highlighted below) and then paste using your operating systems paste function, for example, entering ++ctrl++**+v**, ++cmd++**+v**, or right click and select paste.
+
+![](_attachments/Usage-Clipboard.png)

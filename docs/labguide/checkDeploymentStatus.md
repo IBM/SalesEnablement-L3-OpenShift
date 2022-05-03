@@ -1,3 +1,5 @@
+# Check deployment Status
+
 The OpenShift web console provides valuable information about the status of everything running in the OpenShift cluster. In the next section, learn how to access some of the information about the NGINX container image you just deployed.
 
 1. Return to the OpenShift web console tab/window of your web browser and select **Topology** from the left-hand taskbar.
@@ -5,7 +7,7 @@ The OpenShift web console provides valuable information about the status of ever
 3. Click the **Resources** tab in the deployment sidebar.
 
 !!! success "Record this!"
-   Record the **Service port** and **Pod Port** numbers displayed under the **Resources** tab.
+    Record the **Service port** and **Pod Port** numbers displayed under the **Resources** tab.
 
 4. From the displayed list of **Pods**, note how many containers have the **Running** status. You should see only one at this time.
 
@@ -42,7 +44,9 @@ hostname
 
 ??? example "Example output"
     sh-4.2$ hostname
+
     nginx-sample-869bf677b6-7wnzs
+
     sh-4.2$
 
 11. Discover the **IP address** of the running container for your NGINX server, by running the **hostname -i** command.
@@ -53,7 +57,9 @@ hostname -i
 
 ??? example "Example output"
     sh-4.2$ hostname -i
+
     172.30.234.2
+
     sh-4.2$
 
 Later in this lab you will deploy another NGINX web server and create a load balancer to distribute requests between the two web servers.  To make it easier to identify which web server is being access, change the content that is displayed when you access this server.
@@ -68,9 +74,13 @@ ls
 
 ??? example "Example output"
     sh-4.2$ cp index.html index.html.orig
+
     sh-4.2$ echo NGINX Server 1 works! > index.html
+
     sh-4.2$ ls
+
     README.md  index.html  index.html.orig  nginx-start  openshift
+
     sh-4.2$
 
 13. Click **Topology** in left-hand task bar of OpenShift web console.

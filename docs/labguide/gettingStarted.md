@@ -52,11 +52,10 @@ details you’ll need to know in order to connect with the OpenShift v4.X cluste
 3. Open a new browser tab or window and connect to the OpenShift cluster using the **URL** from **Step 1** and the **credentials** from **Step 2**.
 
 !!! warning "Warning"
-   Depending on your browser, you may be presented with a warning similar to the one shown here. Ignore the warning. If you are using Safari, click **Visit This Website** button (as shown) to bypass the warning. You may be asked to enter your **MacOS password** to make the necessary Certificate Trust Settings changes.
+    Depending on your browser, you may be presented with a warning similar to the one shown here. Ignore the warning. If you are using Safari, click **Visit This Website** button (as shown) to bypass the warning. You may be asked to enter your **MacOS password** to make the necessary Certificate Trust Settings changes.
 
 !!! note "Note"
-
-   Some users have been prompted to enter the MacOS password twice. Authenticate again if/when instructed to do. When the OpenShift dashboard fully loads, you’ll be ready to advance.
+    Some users have been prompted to enter the MacOS password twice. Authenticate again if/when instructed to do. When the OpenShift dashboard fully loads, you’ll be ready to advance.
 
 4. Your Web browser will be directed to the OpenShift Container Platform login page. From the two options for login (kube:admin or htpasswd), select the second **htpasswd** button.
 5. Enter the credentials provided to you on the Project Kit page for authentication (Step 2 above).
@@ -69,7 +68,7 @@ details you’ll need to know in order to connect with the OpenShift v4.X cluste
 Congratulations — the OCP v4.X cluster is now up and running. You’re ready to get to work.
 
 !!! note "Important"
-   Use the accompanying lab guide to complete this course, and remember to record when prompted (with screenshots or in a text log) if asked to do so. You’ll need these logs to pass the certification test.
+    Use the accompanying lab guide to complete this course, and remember to record when prompted (with screenshots or in a text log) if asked to do so. You’ll need these logs to pass the certification test.
 
 Refer to the [Certification section](../certification.md) of this document for instructions on how to receive credit for completing this lab.
 

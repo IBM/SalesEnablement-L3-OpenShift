@@ -24,4 +24,4 @@ While the pod count could be scaled back down using the above process and changi
 Observe how the pod count circle changes. OpenShift immediately beings the process of scaling down the number of pods from 2 to 1. Before proceeding wait for the pod count to equal 1 and the outer ring returns to solid blue.
 
 !!! question "Do you know the difference between deleting a pod and scaling down the number of pods?"
-   When you **delete** a pod, you terminate the pod thus removing it from any additional network access. But by **scaling down** a deployment, the deployment remains active as resources and network access to the remaining pod(s) are still active.
+    When you **delete** a pod, you terminate the pod thus removing it from any additional network access. But by **scaling down** a deployment, the deployment remains active as resources and network access to the remaining pod(s) are still active.

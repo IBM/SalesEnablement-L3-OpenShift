@@ -12,7 +12,8 @@ In this section, you will create a route to balance network traffic between our 
    Name: ```nginx-route```
    Service: **nginx-server-1**
 
-7. Click on **+ Add Alternate Service**
+7. Click on **+ Add Alternate Service** and update with:
+
    Weight: 50
    Alternative Service Target: **nginx-server-2**
    Alternative Service Weight: 50
