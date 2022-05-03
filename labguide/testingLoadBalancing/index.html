@@ -65,6 +65,11 @@
     <label class="md-overlay" for="__drawer"></label>
     <div data-md-component="skip">
       
+        
+        <a href="#testing-load-balancing" class="md-skip">
+          Skip to content
+        </a>
+      
     </div>
     <div data-md-component="announce">
       
@@ -364,6 +369,8 @@
       <input class="md-nav__toggle md-toggle" data-md-toggle="toc" type="checkbox" id="__toc">
       
       
+        
+      
       
       <a href="./" class="md-nav__link md-nav__link--active">
         Testing Load Balancing
@@ -402,14 +409,31 @@
               </div>
             
             
+              
+              <div class="md-sidebar md-sidebar--secondary" data-md-component="sidebar" data-md-type="toc" >
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+
+<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
+  
+  
+  
+    
+  
+  
+</nav>
+                  </div>
+                </div>
+              </div>
+            
           
           <div class="md-content" data-md-component="content">
             <article class="md-content__inner md-typeset">
               
                 
 
-  <h1>Testing Load Balancing</h1>
-
+<h1 id="testing-load-balancing">Testing load balancing</h1>
 <p>Now that the route has been created to the two NGINX web servers, you will test the load balancing capabilities of the OpenShift platform by demonstrating how traffic can be distributed across our two containerized web servers.</p>
 <p>To test the load balancer distribution, we will create an automated script to create a bunch of requests. In this part of the demonstration, you will use the IBM Cloud Shell. If you are not familiar with IBM Cloud Shell, you can learn about it <a href="https://cloud.ibm.com/docs/cloud-shell?topic=cloud-shell-getting-started">here</a>.</p>
 <ol>
@@ -435,8 +459,8 @@
 <p>Remember to substitute the demo-route URL with the one you recorded in Step 9 of <a href="../balancingNetworkTraffic/">Balancing network traffic</a>. Take note of how the application routing is balanced equally (50:50) between <em>nginx-server-1</em> and <em>nginx-server-2</em> according to the route definition created earlier!</p>
 <div class="admonition success">
 <p class="admonition-title">Record this!</p>
-</div>
 <p>Record the script's output. How many times is <strong>NGINX Server 1 works!</strong> and <strong>NGINX Server 2 works!</strong> printed to the screen?</p>
+</div>
 
               
             </article>

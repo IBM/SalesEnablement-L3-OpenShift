@@ -66,7 +66,7 @@
     <div data-md-component="skip">
       
         
-        <a href="#deploying-multiple-instances-of-an-image" class="md-skip">
+        <a href="#deploying-multiple-instances-of-an-application" class="md-skip">
           Skip to content
         </a>
       
@@ -433,7 +433,7 @@
               
                 
 
-<h1 id="deploying-multiple-instances-of-an-image">Deploying multiple instances of an image</h1>
+<h1 id="deploying-multiple-instances-of-an-application">Deploying multiple instances of an application</h1>
 <p>Earlier, you learned that a <strong>pod</strong> consists of one or more containers deployed together on <strong>one host</strong>, and is the smallest compute unit that can be defined, deployed, and managed. You also learned you could scale the number of pods up and down which adds a layer of resiliency.  But as noted by the definition of a <strong>pod</strong>, they are running on a single host.  To obtain more resiliency and availability of an application, you can create multiple deployments of an image and load balance traffic to those instances.  In this next section, deploy another instance of the NGINX image.</p>
 <ol>
 <li>Return to the <strong>Developer</strong> perspective in the OpenShift web console.</li>
@@ -461,17 +461,17 @@
 </code></pre></div>
 <details class="example">
 <summary>Example output</summary>
-</details>
 <p>sh-4.2$ cp index.html index.html.orig
-   sh-4.2$ echo NGINX Server 1 works! &gt; index.html
-   sh-4.2$ ls
-   README.md  index.html  index.html.orig  nginx-start  openshift
-   sh-4.2$</p>
+sh-4.2$ echo NGINX Server 1 works! &gt; index.html
+sh-4.2$ ls
+README.md  index.html  index.html.orig  nginx-start  openshift
+sh-4.2$</p>
+</details>
 <ol start="14">
 <li>Click <strong>Topology</strong> in left-hand task bar of OpenShift web console.</li>
 <li>Click the <strong>Open URL</strong> button on the edge of the <em>nginx-server-2</em> deployment icon. This will launch as a new tab or window in your web browser. You should now see the default page for the web server displays the new message: <strong>NGINX Server 2 works!</strong></li>
 </ol>
-<p>In the next section you will create a route to load balance network traffic between the two NGINX web servers. </p>
+<p>In the next section you will create a route to load balance network traffic between the two NGINX web servers.</p>
 
               
             </article>

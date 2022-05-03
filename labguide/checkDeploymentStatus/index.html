@@ -65,6 +65,11 @@
     <label class="md-overlay" for="__drawer"></label>
     <div data-md-component="skip">
       
+        
+        <a href="#check-deployment-status" class="md-skip">
+          Skip to content
+        </a>
+      
     </div>
     <div data-md-component="announce">
       
@@ -294,6 +299,8 @@
       <input class="md-nav__toggle md-toggle" data-md-toggle="toc" type="checkbox" id="__toc">
       
       
+        
+      
       
       <a href="./" class="md-nav__link md-nav__link--active">
         Check Deployment Status
@@ -402,14 +409,31 @@
               </div>
             
             
+              
+              <div class="md-sidebar md-sidebar--secondary" data-md-component="sidebar" data-md-type="toc" >
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+
+<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
+  
+  
+  
+    
+  
+  
+</nav>
+                  </div>
+                </div>
+              </div>
+            
           
           <div class="md-content" data-md-component="content">
             <article class="md-content__inner md-typeset">
               
                 
 
-  <h1>Check Deployment Status</h1>
-
+<h1 id="check-deployment-status">Check deployment Status</h1>
 <p>The OpenShift web console provides valuable information about the status of everything running in the OpenShift cluster. In the next section, learn how to access some of the information about the NGINX container image you just deployed.</p>
 <ol>
 <li>Return to the OpenShift web console tab/window of your web browser and select <strong>Topology</strong> from the left-hand taskbar.</li>
@@ -418,8 +442,8 @@
 </ol>
 <div class="admonition success">
 <p class="admonition-title">Record this!</p>
-</div>
 <p>Record the <strong>Service port</strong> and <strong>Pod Port</strong> numbers displayed under the <strong>Resources</strong> tab.</p>
+</div>
 <ol start="4">
 <li>From the displayed list of <strong>Pods</strong>, note how many containers have the <strong>Running</strong> status. You should see only one at this time.</li>
 </ol>
@@ -453,9 +477,9 @@
 </code></pre></div>
 <details class="example">
 <summary>Example output</summary>
-<p>sh-4.2$ hostname
-nginx-sample-869bf677b6-7wnzs
-sh-4.2$</p>
+<p>sh-4.2$ hostname</p>
+<p>nginx-sample-869bf677b6-7wnzs</p>
+<p>sh-4.2$</p>
 </details>
 <ol start="11">
 <li>Discover the <strong>IP address</strong> of the running container for your NGINX server, by running the <strong>hostname -i</strong> command.</li>
@@ -464,9 +488,9 @@ sh-4.2$</p>
 </code></pre></div>
 <details class="example">
 <summary>Example output</summary>
-<p>sh-4.2$ hostname -i
-172.30.234.2
-sh-4.2$</p>
+<p>sh-4.2$ hostname -i</p>
+<p>172.30.234.2</p>
+<p>sh-4.2$</p>
 </details>
 <p>Later in this lab you will deploy another NGINX web server and create a load balancer to distribute requests between the two web servers.  To make it easier to identify which web server is being access, change the content that is displayed when you access this server.</p>
 <ol start="12">
@@ -478,11 +502,11 @@ sh-4.2$</p>
 </code></pre></div>
 <details class="example">
 <summary>Example output</summary>
-<p>sh-4.2$ cp index.html index.html.orig
-sh-4.2$ echo NGINX Server 1 works! &gt; index.html
-sh-4.2$ ls
-README.md  index.html  index.html.orig  nginx-start  openshift
-sh-4.2$</p>
+<p>sh-4.2$ cp index.html index.html.orig</p>
+<p>sh-4.2$ echo NGINX Server 1 works! &gt; index.html</p>
+<p>sh-4.2$ ls</p>
+<p>README.md  index.html  index.html.orig  nginx-start  openshift</p>
+<p>sh-4.2$</p>
 </details>
 <ol start="13">
 <li>Click <strong>Topology</strong> in left-hand task bar of OpenShift web console.</li>
