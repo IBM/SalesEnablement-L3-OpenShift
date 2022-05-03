@@ -15,8 +15,11 @@ In this section, you will create a route to balance network traffic between our 
 7. Click on **+ Add Alternate Service** and update with:
 
    Weight: 50
+
    Alternative Service Target: **nginx-server-2**
+
    Alternative Service Weight: 50
+
    Target Port: 8080->8080
 
 8. Click **Create**.

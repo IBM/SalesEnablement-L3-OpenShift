@@ -15,11 +15,11 @@ the environment.
 3. Set the **Quantity** equal to _1_ and then click the **Add To Cart** button.
 
 !!! note "Note"
-   Deployments of OpenShift on Power through the ITZ are pre-configured in terms of their sizing. By default, CPU, memory, and number of instances provided per deployment are fixed.
+    Deployments of OpenShift on Power through the ITZ are pre-configured in terms of their sizing. By default, CPU, memory, and number of instances provided per deployment are fixed.
 
-   This simplifies the provisioning process in the majority of circumstances (particularly for simple demonstration purposes such as these). However, there may be occasions where you will require a more robust environment — either for your own training or for a client demonstration. If you require a custom configuration, select the **Request Custom Configuration** link as shown.
+    This simplifies the provisioning process in the majority of circumstances (particularly for simple demonstration purposes such as these). However, there may be occasions where you will require a more robust environment — either for your own training or for a client demonstration. If you require a custom configuration, select the **Request Custom Configuration** link as shown.
 
-   Otherwise, there is no configuration required on your part at this stage. We will explore more configuration options in the second half of this lab.
+    Otherwise, there is no configuration required on your part at this stage. We will explore more configuration options in the second half of this lab.
 
 Next you will configure the OpenShift cluster size and reservation period.
 
@@ -28,7 +28,7 @@ Next you will configure the OpenShift cluster size and reservation period.
 6. **Used For** is set to _Self Education_.
 
 !!! note "Note"
-   Reserve only as much time as you need to complete this lab. You will need an estimate 60 to 90 minutes from start to finish. However, you can safely reserve several days of time if you feel you might benefit from it.
+    Reserve only as much time as you need to complete this lab. You will need an estimate 60 to 90 minutes from start to finish. However, you can safely reserve several days of time if you feel you might benefit from it.
 
 7. When satisfied, click **Reserve Project**.
 
@@ -54,7 +54,6 @@ details you’ll need to know in order to connect with the OpenShift v4.X cluste
 !!! warning "Warning"
     Depending on your browser, you may be presented with a warning similar to the one shown here. Ignore the warning. If you are using Safari, click **Visit This Website** button (as shown) to bypass the warning. You may be asked to enter your **MacOS password** to make the necessary Certificate Trust Settings changes.
 
-!!! note "Note"
     Some users have been prompted to enter the MacOS password twice. Authenticate again if/when instructed to do. When the OpenShift dashboard fully loads, you’ll be ready to advance.
 
 4. Your Web browser will be directed to the OpenShift Container Platform login page. From the two options for login (kube:admin or htpasswd), select the second **htpasswd** button.

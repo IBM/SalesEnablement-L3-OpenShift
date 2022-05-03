@@ -27,9 +27,6 @@ theme:
   name: material
   features:
     - navigation.instant
-    - navigation.tracking
-    - navigation.tabs
-    - navigation.tabs.sticky
     - navigation.sections
     - navigation.expand
     - toc.follow
@@ -71,8 +68,8 @@ extra:
     name: "IBM Cloud OpenShift Basics Level 3"
     url: "https://yourlearning/"
   tz_environment:
-    name: "IBM Cloud Satellite - Sales Enablment L3"
-    url: "https://techzone.ibm.com/my/reservations"
+    name: "Red Hat OpenShift onIBM Cloud basics lab"
+    url: "https://techzone.ibm.com/collection/roks-basics-lab"
     uuid_label: "Demo-UUID"
   account: "2435442 - ITZ - Satellite"
   ibm:

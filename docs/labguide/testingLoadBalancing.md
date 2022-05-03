@@ -8,7 +8,7 @@ To test the load balancer distribution, we will create an automated script to cr
 
 ![](_attachments/CloudShellMenu2.png)
 
-The IBM Cloud Shell will open in a new browser tab or window. It may take a few seconds for the shell to initialize.
+   The IBM Cloud Shell will open in a new browser tab or window. It may take a few seconds for the shell to initialize.
 
 ![](_attachments/CloudShell.png)
 
@@ -29,7 +29,7 @@ done
 ??? example "Sample output"
     NEED SAMPLE OUTPUT here
 
-Remember to substitute the demo-route URL with the one you recorded in Step 9 of [Balancing network traffic](balancingNetworkTraffic.md). Take note of how the application routing is balanced equally (50:50) between _nginx-server-1_ and _nginx-server-2_ according to the route definition created earlier!
+    Remember to substitute the demo-route URL with the one you recorded in Step 9 of [Balancing network traffic](balancingNetworkTraffic.md). Take note of how the application routing is balanced equally (50:50) between _nginx-server-1_ and _nginx-server-2_ according to the route definition created earlier!
 
 !!! success "Record this!"
     Record the script's output. How many times is **NGINX Server 1 works!** and **NGINX Server 2 works!** printed to the screen?
