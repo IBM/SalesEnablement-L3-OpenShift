@@ -9,6 +9,7 @@ repo_name: IBM/SalesEnablement-L3-OpenShift
 docs_dir: docs
 
 nav:
+  - 'Objectives': 'objectives.md'
   - 'Certification': 'certification.md'
   - 'Prerequisites': 'prerequisites.md'
   - Lab Guide:
@@ -27,6 +28,12 @@ theme:
   features:
     - navigation.instant
     - navigation.tracking
+    - navigation.tabs
+    - navigation.tabs.sticky
+    - navigation.sections
+    - navigation.expand
+    - toc.follow
+    - toc.integrate
     - navigation.top
     - content.code.annotate
   palette:
