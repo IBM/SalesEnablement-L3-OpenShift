@@ -4,7 +4,12 @@ The OpenShift web console provides valuable information about the status of ever
 
 1. Return to the OpenShift web console tab/window of your web browser and select **Topology** from the left-hand taskbar.
 2. Click the center of the deployment icon to display the deployment side bar containing the deployment details.
-3. Click the **Resources** tab in the deployment sidebar.
+
+![](_attachments/OCP-deployment-resources-page.png)
+
+3. If not already selected, click the **Resources** tab in the deployment sidebar.
+
+![](_attachments/OCP-deployment-resources-page-2.png)
 
 !!! success "Record this!"
     Record the **Service port** and **Pod Port** numbers displayed under the **Resources** tab.
@@ -25,18 +30,26 @@ OpenShift leverages the Kubernetes concept of a **pod**, which is one or more co
     [Pods and Services](https://docs.openshift.com/online/pro/architecture/core_concepts/pods_and_services.html)
 
 5. Take note of the pod **name**, then click on the name to view more details.
-6. Click on the **Details** tab (default page).
-7. Scroll down the **Details** tab and record the **IP Addresss** and **Restart Policy** for the pod.
+
+![](_attachments/OCP-pod-details.png)
+
+6. Scroll down the **Details** tab and record the **IP Addresss** and **Restart Policy** for the pod.
 
 !!! success "Record this!"
-    Record the **IP Address** and **Restart Policy** for your pod.
+    Record the **Restart Policy** for your pod.
 
-8. Click the **Terminal** tab.
-9. Click inside the **Terminal** window (black box with a prompt like **sh-4.2$**).
+7. Click the **Terminal** tab.
+
+![](_attachments/OCP-pod-terminal.png)
+
+8. Click inside the **Terminal** window (black box with a prompt like **sh-4.2$**).
 
 The **Terminal** window allows you to issue commands directly to the operating system that is running in the container you deployed using the NGINX image. This image is running a customized Linux operating system.
 
-10. Discover the **hostname** of your NGINX server, by running the **hostname** command.
+9. Discover the **hostname** of your NGINX server, by running the **hostname** command.
+
+!!! tip
+    To save time, use click the ![](_attachments/CopyToClipboard.png) icon in the sections below to copy the text to your clipboard and then paste the text into the web console.
 
 ```
 hostname
@@ -49,7 +62,7 @@ hostname
 
     sh-4.2$
 
-11. Discover the **IP address** of the running container for your NGINX server, by running the **hostname -i** command.
+10. Discover the **IP address** of the running container for your NGINX server, by running the **hostname -i** command.
 
 ```
 hostname -i
@@ -64,11 +77,11 @@ hostname -i
 
 Later in this lab you will deploy another NGINX web server and create a load balancer to distribute requests between the two web servers.  To make it easier to identify which web server is being access, change the content that is displayed when you access this server.
 
-12. Issue the following commands in the **Terminal** to modify the web server's default page. You will first create a backup copy of the original file in case you want to revert back to it later.
+11. Issue the following commands in the **Terminal** to modify the web server's default page. You will first create a backup copy of the original file in case you want to revert back to it later.
 
 ```
 cp index.html index.html.orig
-echo "NGINX Server 1 works!" > index.html
+echo NGINX Server 1 works! > index.html
 ls
 ```
 
@@ -83,7 +96,11 @@ ls
 
     sh-4.2$
 
-13. Click **Topology** in left-hand task bar of OpenShift web console.
-14. Click the **Open URL** button on the edge of the deployment icon. This will launch as a new tab or window in your web browser. You should now see the default page for the web server displays the new message: **NGINX Server 1 works!**
+![](_attachments/OCP-pod-terminal-allcommands.png)
+
+12. Click **Topology** in left-hand task bar of OpenShift web console.
+13. Click the **Open URL** button on the edge of the deployment icon. This will launch as a new tab or window in your web browser. You should now see the default page for the web server displays the new message: **NGINX Server 1 works!**
+
+![](_attachments/OCP-server-1-works.png)
 
 In the next section learn about OpenShift pod resiliency.

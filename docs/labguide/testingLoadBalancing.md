@@ -6,30 +6,35 @@ To test the load balancer distribution, we will create an automated script to cr
 
 1. In the IBM Cloud Portal, with the demonstration account selected (**{{ account }}**), click the IBM Cloud Shell icon.
 
-![](_attachments/CloudShellMenu2.png)
+![](_attachments/IBMCloudPortal-CloudShellIcon.png)
 
    The IBM Cloud Shell will open in a new browser tab or window. It may take a few seconds for the shell to initialize.
 
 ![](_attachments/CloudShell.png)
 
-2. Copy and paste the script below into the IBM Cloud Shell.
+2. Create an shell environment variable with the **Location** URL you saved in the last section. At the **Cloud Shell** enter the following command substituting the **"URL"** with your **Location** URL.
 
+```
+export LOCATION="URL"
+```
 
-NEED TO MODIFY THIS TO PULL THE ROUTE!!!! and change text below the script
+![](_attachments/CloudShell-export.png)
 
+3. Copy and paste the script below into the IBM Cloud Shell and press **enter**.
 
 ```
 for i in 1 2 3 4 5 6 7 8 9 10 11 12
 do
-wget -q http://<URL_of_the_demo-route> -O index.test
+wget -q $LOCATION -O index.test
 grep works index.test
 done
 ```
 
-??? example "Sample output"
-    NEED SAMPLE OUTPUT here
+![](_attachments/CloudShell-load-script-output.png)
 
-    Remember to substitute the demo-route URL with the one you recorded in Step 9 of [Balancing network traffic](balancingNetworkTraffic.md). Take note of how the application routing is balanced equally (50:50) between _nginx-server-1_ and _nginx-server-2_ according to the route definition created earlier!
+Remember to substitute the **Location** URL with the one you recorded in the last step of [Balancing network traffic](balancingNetworkTraffic.md). Take note of how the application routing is balanced equally (50:50) between _nginx-server-1_ and _nginx-server-2_ according to the route definition created earlier!
 
 !!! success "Record this!"
     Record the script's output. How many times is **NGINX Server 1 works!** and **NGINX Server 2 works!** printed to the screen?
+
+You know have an application that is deployed across multiple servers and load balanced to distribute incoming requests between the deployed servers.
