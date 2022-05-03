@@ -29,11 +29,10 @@ OpenShift leverages the Kubernetes concept of a **pod**, which is one or more co
 
     [Pods and Services](https://docs.openshift.com/online/pro/architecture/core_concepts/pods_and_services.html)
 
-5. Take note of the pod **name**, then click on the name to view more details.
+5. Take note of the pod **name**, then click on the **name** to view more details.
+6. Scroll down the **Details** tab and record the **Restart Policy** for the pod.
 
 ![](_attachments/OCP-pod-details.png)
-
-6. Scroll down the **Details** tab and record the **IP Addresss** and **Restart Policy** for the pod.
 
 !!! success "Record this!"
     Record the **Restart Policy** for your pod.

@@ -2,7 +2,7 @@
 
 To get started, you will need to open the Red Hat OpenShift web console.  The easiest way to do this is to access it via the IBM Cloud portal.
 
-1. Open a browser window/tab to [cloud.ibm.com](cloud.ibm.com).
+1. Open a browser window/tab to [https://cloud.ibm.com](https://cloud.ibm.com).
 
 2. Change from your IBM Cloud account to the lab account: **{{ account }}**
 

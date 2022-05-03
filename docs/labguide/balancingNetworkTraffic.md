@@ -11,14 +11,14 @@ On this screen you can see the defaults routes that were automatically created w
 
 5. Click **Create Route**.
 
-![](_attachments/OCP-balancing-routes-page.gif)
+![](_attachments/OCP-balancing-routes-page.png)
 
 6. Configure the following properties:
 
    Name: ```nginx-route```
    Service: **nginx-server-1**
 
-![](_attachments/OCP-balancing-routes-page-1st-service.gif)
+![](_attachments/OCP-balancing-routes-page-1st-service.png)
 
 
 7. Click on **+ Add Alternate Service** and update with:
@@ -31,7 +31,7 @@ On this screen you can see the defaults routes that were automatically created w
 
    Target Port: 8080->8080
 
-   ![](_attachments/OCP-balancing-routes-page-2nd-service.gif)
+   ![](_attachments/OCP-balancing-routes-page-2nd-service.png)
 
 !!! warning "Make sure both the **Weight** and **Alternate Service weight** fields are set to **50**"
 
@@ -41,6 +41,6 @@ Once the route is created, your web browser will redirect to the details page of
 
 9. Record the **Location** (URL) of the **nginx-route**.
 
-![](_attachments/OCP-balancing-routes-details.gif)
+![](_attachments/OCP-balancing-routes-details.png)
 
 The default OpenShift load balancer is used to distribute incoming requests sent to the route's **Location** URL. Be sure to copy the **Location** URL as you will use it in the next section.

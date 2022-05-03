@@ -1,6 +1,6 @@
 # What you will need
 
-Please ensure you’ve prepared and reviewed the following before embarking on this lab. If you haven't already, sign up for an IBMID on IBM Cloud (this will be linked with your w3ID if you are an IBMer): [cloud.ibm.com](cloud.ibm.com)
+Please ensure you’ve prepared and reviewed the following before embarking on this lab. If you haven't already, sign up for an IBMID on IBM Cloud (this will be linked with your w3ID if you are an IBMer): [https://cloud.ibm.com](https://cloud.ibm.com)
 
 This lab uses a pre-configured Red Hat OpenShift on IBM Cloud cluster that is shared amongst others completing the lab. The environment is provided through IBM Technology Zone. Follow the directions below to create a reservation and receive access to the environment.
 
