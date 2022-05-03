@@ -454,9 +454,13 @@
 <p>In the previous section, you discovered that the pod restart policy for your deployment was set to <strong>Always Restart</strong>. In this section we will test the resiliency of the deployment and its policies.</p>
 <ol>
 <li>Return to the pod details page: click the center of the deployment icon on the <strong>Topology</strong> view of the web console.</li>
-<li>Click the <strong>pod</strong> name link</li>
+<li>Click the <strong>pod</strong> name link.</li>
+</ol>
+<p><img alt="" src="../_attachments/OCP-resiliency-resources.png" /></p>
+<ol start="3">
 <li>To simulate a pod failure, terminate the pod. From the Actions menu, click <strong>Delete Pod</strong>.</li>
 </ol>
+<p><img alt="" src="../_attachments/OCP-resiliency-actions-menu.png" /></p>
 <div class="admonition note">
 <p class="admonition-title">Note</p>
 <p>In the next step, you will confirm the deletion.  When you do so, the OpenShift web console will reload with a view of all pods.  To better view the deletion and the restart policy in action, immediately after confirming the deletion, click <strong>Topology</strong> in the left-hand taskbar and watch the NGINX deployment icon.</p>
@@ -464,9 +468,10 @@
 <ol start="4">
 <li>Confirm the action by clicking <strong>Delete</strong>.</li>
 </ol>
+<p><img alt="" src="../_attachments/OCP-resiliency-pod-delete-confirm.png" /></p>
 <p>You should notice the deployment icon change from a solid blue outer ring to a segmented black and light blue ring. Wait for the pod to restart (single blue outer ring).</p>
 <ol start="5">
-<li>Return to the Pod Details tab. Observe the name of the pod. Does it match the previous Pod’s ID?</li>
+<li>Return to the Pod Details tab by clicking on center of NGINX deployment icon. Observe the name of the pod. Does it match the previous Pod’s ID?</li>
 </ol>
 <p>In the next section learn about scaling OpenShift containers.</p>
 

@@ -453,23 +453,37 @@
 <h1 id="deploy-a-containerized-application">Deploy a containerized application</h1>
 <p>Using the OpenShift web console you just opened in the <a href="../gettingStarted/">Getting Started section</a>, use the steps below to deploy an <strong>application</strong>. For this lab, the application is a <strong>web server</strong> that is running in a  container running the NGINX image.  NGINX is a free and open-source web server. You can learn more about <a href="https://en.wikipedia.org/wiki/Nginx">NGINX on Wikipedia</a> and <a href="https://www.nginx.com/">here</a>.</p>
 <ol>
-<li>In the top-left of the OpenShift web console, locate the <strong>Administrator/Developer</strong> toggle button. You will use this toggle frequently over the course of the hands-on lab to cycle between Administrator and Developer perspectives within the OCP cluster. Select the <strong>Developer</strong> perspective.</li>
-<li>If not already selected, click the <strong>Project</strong> pull down menu and select the <strong>Project name</strong> created for you. You can find this name in your ITZ reservation e-mail or on the ITZ project page.</li>
-<li>If not already selected, click the <strong>Add</strong> tab on the left-hand taskbar of the OpenShift web console.</li>
+<li>Click <strong>+Add</strong> on the left-hand taskbar of the OpenShift web console.</li>
+</ol>
+<p><img alt="" src="../_attachments/OCP-add-resource.png" /></p>
+<ol start="2">
 <li>Click the <strong>View all samples</strong> link on the <strong>Getting started resources</strong> tile.</li>
+</ol>
+<p><img alt="" src="../_attachments/OCP-add-resouces-page.png" /></p>
+<ol start="3">
 <li>Click the <strong>NGINX</strong> tile.</li>
+</ol>
+<p>The order of the tiles you see may vary from what is pictured below.</p>
+<p><img alt="" src="../_attachments/OCP-all-resouces-page.png" /></p>
+<ol start="4">
 <li>Change the <strong>Name</strong> field from <em>nginx-sample</em> to <em>nginx-server-1</em>.
-<div class="highlight"><pre><span></span><code><a id="__codelineno-0-1" name="__codelineno-0-1" href="#__codelineno-0-1"></a>nginx-server-2
+<div class="highlight"><pre><span></span><code><a id="__codelineno-0-1" name="__codelineno-0-1" href="#__codelineno-0-1"></a>nginx-server-1
 </code></pre></div></li>
+</ol>
+<p><img alt="" src="../_attachments/OCP-nginx-create.png" /></p>
+<ol start="5">
 <li>Click <strong>Create</strong>.</li>
 </ol>
+<p><img alt="" src="../_attachments/OCP-nginx-provisioning.png" /></p>
 <p>Your browser will refresh to the <strong>Topology</strong> view.  Notice the view now shows a NGINX deployment icon. The icon will cycle thru color changes as the container is created and the image is deployed. Wait for the outer circle to turn blue. Once the outer circle is blue, the container can be accessed.</p>
-<ol start="8">
+<p><img alt="" src="../_attachments/OCP-nginx-provisioned.png" /></p>
+<ol start="6">
 <li>Click the <strong>Open URL</strong> button on the edge of the deployment icon to open the default route created during the deployment. This will launch as a new tab or window in your web browser.</li>
 </ol>
+<p><img alt="" src="../_attachments/OCP-nginx-icon-closeup.png" /></p>
 <div class="admonition success">
 <p class="admonition-title">Record this!</p>
-<p>Record the text displayed in the new browser tab/window after you click the <strong>Open URL</strong> button of the NGINX deployment icon.</p>
+<p>Record the text displayed in the new browser tab/window after you click the <strong>Open URL</strong> button of the NGINX deployment icon. Note, you will need this information when completing the lab quiz!</p>
 </div>
 <p>Your NGINX web server is now alive and well.  Next, learn to scale and manipulate this containerized HTTP server.</p>
 

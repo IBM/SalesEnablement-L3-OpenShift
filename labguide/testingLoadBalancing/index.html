@@ -456,28 +456,31 @@
 <ol>
 <li>In the IBM Cloud Portal, with the demonstration account selected (<strong>2435442 - ITZ - Satellite</strong>), click the IBM Cloud Shell icon.</li>
 </ol>
-<p><img alt="" src="_attachments/CloudShellMenu2.png" /></p>
+<p><img alt="" src="../_attachments/IBMCloudPortal-CloudShellIcon.png" /></p>
 <p>The IBM Cloud Shell will open in a new browser tab or window. It may take a few seconds for the shell to initialize.</p>
-<p><img alt="" src="_attachments/CloudShell.png" /></p>
+<p><img alt="" src="../_attachments/CloudShell.png" /></p>
 <ol start="2">
-<li>Copy and paste the script below into the IBM Cloud Shell.</li>
+<li>Create an shell environment variable with the <strong>Location</strong> URL you saved in the last section. At the <strong>Cloud Shell</strong> enter the following command substituting the <strong>"URL"</strong> with your <strong>Location</strong> URL.</li>
 </ol>
-<p>NEED TO MODIFY THIS TO PULL THE ROUTE!!!! and change text below the script</p>
-<div class="highlight"><pre><span></span><code><a id="__codelineno-0-1" name="__codelineno-0-1" href="#__codelineno-0-1"></a>for i in 1 2 3 4 5 6 7 8 9 10 11 12
-<a id="__codelineno-0-2" name="__codelineno-0-2" href="#__codelineno-0-2"></a>do
-<a id="__codelineno-0-3" name="__codelineno-0-3" href="#__codelineno-0-3"></a>wget -q http://&lt;URL_of_the_demo-route&gt; -O index.test
-<a id="__codelineno-0-4" name="__codelineno-0-4" href="#__codelineno-0-4"></a>grep works index.test
-<a id="__codelineno-0-5" name="__codelineno-0-5" href="#__codelineno-0-5"></a>done
+<div class="highlight"><pre><span></span><code><a id="__codelineno-0-1" name="__codelineno-0-1" href="#__codelineno-0-1"></a>export LOCATION=&quot;URL&quot;
 </code></pre></div>
-<details class="example">
-<summary>Sample output</summary>
-<p>NEED SAMPLE OUTPUT here</p>
-<p>Remember to substitute the demo-route URL with the one you recorded in Step 9 of <a href="../balancingNetworkTraffic/">Balancing network traffic</a>. Take note of how the application routing is balanced equally (50:50) between <em>nginx-server-1</em> and <em>nginx-server-2</em> according to the route definition created earlier!</p>
-</details>
+<p><img alt="" src="../_attachments/CloudShell-export.png" /></p>
+<ol start="3">
+<li>Copy and paste the script below into the IBM Cloud Shell and press <strong>enter</strong>.</li>
+</ol>
+<div class="highlight"><pre><span></span><code><a id="__codelineno-1-1" name="__codelineno-1-1" href="#__codelineno-1-1"></a>for i in 1 2 3 4 5 6 7 8 9 10 11 12
+<a id="__codelineno-1-2" name="__codelineno-1-2" href="#__codelineno-1-2"></a>do
+<a id="__codelineno-1-3" name="__codelineno-1-3" href="#__codelineno-1-3"></a>wget -q $LOCATION -O index.test
+<a id="__codelineno-1-4" name="__codelineno-1-4" href="#__codelineno-1-4"></a>grep works index.test
+<a id="__codelineno-1-5" name="__codelineno-1-5" href="#__codelineno-1-5"></a>done
+</code></pre></div>
+<p><img alt="" src="../_attachments/CloudShell-load-script-output.png" /></p>
+<p>Remember to substitute the <strong>Location</strong> URL with the one you recorded in the last step of <a href="../balancingNetworkTraffic/">Balancing network traffic</a>. Take note of how the application routing is balanced equally (50:50) between <em>nginx-server-1</em> and <em>nginx-server-2</em> according to the route definition created earlier!</p>
 <div class="admonition success">
 <p class="admonition-title">Record this!</p>
 <p>Record the script's output. How many times is <strong>NGINX Server 1 works!</strong> and <strong>NGINX Server 2 works!</strong> printed to the screen?</p>
 </div>
+<p>You know have an application that is deployed across multiple servers and load balanced to distribute incoming requests between the deployed servers.</p>
 
               
             </article>

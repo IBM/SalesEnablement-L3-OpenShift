@@ -66,7 +66,7 @@
     <div data-md-component="skip">
       
         
-        <a href="#reserving-a-cluster" class="md-skip">
+        <a href="#accessing-the-red-hat-openshift-on-ibm-cloud-cluster" class="md-skip">
           Skip to content
         </a>
       
@@ -450,73 +450,45 @@
               
                 
 
-<h1 id="reserving-a-cluster">Reserving a Cluster</h1>
-<p>From a web browser, log in to the ITZ at: https://www.ibm.com/it-infrastructure/services/ceccportal/catalog</p>
-<p>If this is your first visit to the ITZ, you will first need to agree to the terms and conditions before accessing
-the environment.</p>
+<h1 id="accessing-the-red-hat-openshift-on-ibm-cloud-cluster">Accessing the Red Hat OpenShift on IBM Cloud cluster</h1>
+<p>To get started, you will need to open the Red Hat OpenShift web console.  The easiest way to do this is to access it via the IBM Cloud portal.</p>
 <ol>
-<li>From the Catalog tab, perform a search for <strong>Red Hat OpenShift</strong> and wait for the results to filter.</li>
-<li>Select the <strong>POWER8 LPAR</strong> bundle by clicking the blue arrow icon of the tile, then wait for the browser to load the configuration page.</li>
+<li>
+<p>Open a browser window/tab to <a href="https://cloud.ibm.com">https://cloud.ibm.com</a>.</p>
+</li>
+<li>
+<p>Change from your IBM Cloud account to the lab account: <strong>2435442 - ITZ - Satellite</strong></p>
+</li>
 </ol>
-<p>You will now be asked to provide the ITZ with System Details on how you want the environment to be configured.</p>
-<p>Select the I<strong>BM POWER8 LPAR Bundle</strong> you wish to use for the lab. At the time of publishing, that would be the OCP 4.8 pre-install configuration, as shown on the right. If a more recent release of OpenShift is available to you at the time of conducting this lab, you can opt to use the latest release instead. However, be aware that minor changes to the user interface or functionality may arise compared to the instructions provided in this lab guide.</p>
+<p><img alt="" src="../_attachments/ChangeAccounts-2-a-gif.gif" /></p>
+<div class="admonition tip">
+<p class="admonition-title">Tip</p>
+<p>If your browser window is narrow, you may see this icon: <img alt="" src="../_attachments/SwitchAccountsIcon.png" /> instead of the current account name as shown in the screen capture above. If you do not see the 2435442 - ITZ - Satellite listed, verify you accepted the invitation from IBM Cloud to join the account and that your IBM Technology Zone environment is active.</p>
+</div>
 <ol start="3">
-<li>Set the <strong>Quantity</strong> equal to <em>1</em> and then click the <strong>Add To Cart</strong> button.</li>
+<li>Click the <strong>Clusters</strong> link in the <strong>Resource summary</strong> tile.</li>
 </ol>
-<div class="admonition note">
-<p class="admonition-title">Note</p>
-<p>Deployments of OpenShift on Power through the ITZ are pre-configured in terms of their sizing. By default, CPU, memory, and number of instances provided per deployment are fixed.</p>
-<p>This simplifies the provisioning process in the majority of circumstances (particularly for simple demonstration purposes such as these). However, there may be occasions where you will require a more robust environment — either for your own training or for a client demonstration. If you require a custom configuration, select the <strong>Request Custom Configuration</strong> link as shown.</p>
-<p>Otherwise, there is no configuration required on your part at this stage. We will explore more configuration options in the second half of this lab.</p>
-</div>
-<p>Next you will configure the OpenShift cluster size and reservation period.</p>
+<p><img alt="" src="../_attachments/IBMCloudPortal-Dashboard.png" /></p>
 <ol start="4">
-<li>Click the checkbox for your OCP image request.</li>
-<li><strong>Project Name</strong> is set to your own preference.</li>
-<li><strong>Used For</strong> is set to <em>Self Education</em>.</li>
+<li>Click the <strong>NH-Training-cluster-NA</strong> under the <strong>Clusters</strong> section of the <strong>Resource list</strong> table.</li>
 </ol>
-<div class="admonition note">
-<p class="admonition-title">Note</p>
-<p>Reserve only as much time as you need to complete this lab. You will need an estimate 60 to 90 minutes from start to finish. However, you can safely reserve several days of time if you feel you might benefit from it.</p>
-</div>
-<ol start="7">
-<li>When satisfied, click <strong>Reserve Project</strong>.</li>
+<p><img alt="" src="../_attachments/IBMCloudPortal-Clusters.png" /></p>
+<ol start="5">
+<li>Explore the <strong>NH-Training-cluster-NA</strong> cluster details.</li>
 </ol>
-<p>After configuring the environment (the other variables not mentioned in the previous steps can be left as their default variables), you will be prompted with the following screen.</p>
-<p>MISSING image</p>
-<ol start="8">
-<li>Click <strong>OK</strong> to dismiss.</li>
-</ol>
-<p>Pay special attention to the <strong>Date</strong> and <strong>Time</strong> your OCP on PowerVS environment is scheduled for. If you access the Project Kit too early, you’ll only find unresponsive URLs and missing credentials as the cluster is still provisioning.</p>
-<p>Wait until an email arrives confirming that your environment is active (which will be sent shortly after your scheduled time slot) before trying to connect to the OpenShift cluster.</p>
-<h1 id="accessing-the-itz-environment">Accessing the ITZ environment</h1>
-<p>Clicking the Project Kit URL will open a new page for the <strong>Project Kit</strong>, shown below. This page contains all the
-details you’ll need to know in order to connect with the OpenShift v4.X cluster.</p>
-<ol>
-<li>Under the <strong>Offering Information</strong> header (or click P<strong>roject Information</strong> from the tabs) is the Connection URL for your OpenShift cluster. Use this URL to access the cluster.</li>
-<li>Just below the Connection URL, look for the <strong>Account</strong> and <strong>Password</strong> fields for the Console Credentials. <strong>Record these</strong>. Additional details about your environment are summarized in the headers below. Youcan use this information to work programmatically with the OpenShift cluster — if, for example, you wanted to interact via APIs or an SSH console.</li>
-<li>Open a new browser tab or window and connect to the OpenShift cluster using the <strong>URL</strong> from <strong>Step 1</strong> and the <strong>credentials</strong> from <strong>Step 2</strong>.</li>
-</ol>
-<div class="admonition warning">
-<p class="admonition-title">Warning</p>
-<p>Depending on your browser, you may be presented with a warning similar to the one shown here. Ignore the warning. If you are using Safari, click <strong>Visit This Website</strong> button (as shown) to bypass the warning. You may be asked to enter your <strong>MacOS password</strong> to make the necessary Certificate Trust Settings changes.</p>
-<p>Some users have been prompted to enter the MacOS password twice. Authenticate again if/when instructed to do. When the OpenShift dashboard fully loads, you’ll be ready to advance.</p>
-</div>
-<ol start="4">
-<li>Your Web browser will be directed to the OpenShift Container Platform login page. From the two options for login (kube:admin or htpasswd), select the second <strong>htpasswd</strong> button.</li>
-<li>Enter the credentials provided to you on the Project Kit page for authentication (Step 2 above).</li>
-</ol>
-<p><strong>Username</strong> is <em>cecuser</em>
-   <strong>Password</strong> is the string supplied to you on the Project Kit.</p>
+<p>Take a few minutes to explore the information and status about the OpenShift cluster you will be using. Notice the number of nodes in the cluster.  It is fairly large as this environment is used by everyone going thru the lab.  Clusters can be as small as 1 node.</p>
+<p><img alt="" src="../_attachments/IBMCloudPortal-ClusterDetails.png" /></p>
 <ol start="6">
-<li>Click <strong>Log In</strong> when ready and you will be directed to the OpenShift Container Platform web console.</li>
+<li>Click the <strong>OpenShift web console</strong> button at top right.</li>
 </ol>
-<p>Congratulations — the OCP v4.X cluster is now up and running. You’re ready to get to work.</p>
-<div class="admonition note">
-<p class="admonition-title">Important</p>
-<p>Use the accompanying lab guide to complete this course, and remember to record when prompted (with screenshots or in a text log) if asked to do so. You’ll need these logs to pass the certification test.</p>
-</div>
-<p>Refer to the <a href="../../certification/">Certification section</a> of this document for instructions on how to receive credit for completing this lab.</p>
+<p>The OpenShift web console will open in a new browser window or tab depending on your browser settings. You should be directed to the <strong>Topology</strong> page in the <strong>Developer</strong> perspective as illustrated below.  If the top-left pulldown in left-hand taskbar says <strong>Administrator</strong>, click it and select <strong>Developer</strong> and then click the <strong>Topology</strong> menu item in left-hand taskbar.</p>
+<p><img alt="" src="../_attachments/OCP-developer-topology.png" /></p>
+<ol start="7">
+<li>Click the <strong>Project</strong> name that appeared in your ITZ reservation email.</li>
+</ol>
+<p><img alt="" src="../_attachments/OCP-developer-topology-2.png" /></p>
+<p>Projects, also know as namespaces, are similar to folders on your personal computer.  They allow you go group resources and provide access to individual users. As mentioned earlier, you are using a shared OpenShift cluster. While others are also using the cluster, you cannot see their projects, nor can they see yours.</p>
+<p>Congratulations — you are now accessing the Red Hat OpenShift on IBM Cloud v4.X cluster. You’re ready to get to work.</p>
 <p>Good luck!</p>
 
               

@@ -456,22 +456,39 @@
 <li>From the <strong>Topology</strong> page, select the center of the deployment icon to once again display the side bar containing the deployment details.</li>
 <li>Click the <strong>Resources</strong> tab.</li>
 <li>From the Actions drop-down menu at the top-right of the page, click <strong>Edit Pod count</strong>.</li>
+</ol>
+<p><img alt="" src="../_attachments/OCP-scaling-actions-menu.png" /></p>
+<ol start="4">
 <li>Increase the pod count to <em>2</em> by clicking the <strong>+</strong> button.</li>
+</ol>
+<p><img alt="" src="../_attachments/OCP-scaling-edit-pod-count.png" /></p>
+<ol start="5">
 <li>Click <strong>Save</strong>.</li>
 </ol>
 <p>OpenShift will now start an additional pod using the same NGINX container image. The OpenShift web console will be updated dynamically as this process takes place.</p>
 <ol start="6">
 <li>Verify that the second pod has been started by viewing the <strong>Pods</strong> section of the <strong>Deployment</strong> <strong>Resources</strong> tab.</li>
 </ol>
+<p><img alt="" src="../_attachments/OCP-scaling-2pods.png" /></p>
 <p>While the pod count could be scaled back down using the above process and changing the pod count from 2 to 1, lets explore how to do this using the <strong>Administrator</strong> perspective of the OpenShift web console.</p>
 <ol start="7">
-<li>Click the <strong>Developer</strong> perspective pull down menu and click <strong>Administrator</strong>.</li>
+<li>Click the <strong>Perspective</strong> pull down menu and click <strong>Administrator</strong>.</li>
+</ol>
+<p><img alt="" src="../_attachments/OCP-change-perspective-DtoP.png" /></p>
+<ol start="8">
 <li>Click the <strong>Workloads</strong> menu item in the left-hand taskbar.</li>
+</ol>
+<p><img alt="" src="../_attachments/OCP-admin-workloads.png" /></p>
+<ol start="9">
 <li>Click <strong>Deployments</strong> in the sub-menu under <strong>Workloads</strong>.</li>
 <li>Verify your project name is still selected at the top of the page next to the <strong>Project</strong> label.  If it is not, click the current <strong>Project</strong> name to open the projects pulldown menu and select your <strong>Project</strong> name.</li>
+</ol>
+<p><img alt="" src="../_attachments/OCP-admin-workloads-deployments.png" /></p>
+<ol start="11">
 <li>Click the <strong>nginx-server-1</strong> deployment in the list of <strong>Deployments</strong>.</li>
 <li>From the <strong>Details</strong> tab, scale down the pod count to 1 by clicking the <strong>down arrow</strong> next to the pod count circle.</li>
 </ol>
+<p><img alt="" src="../_attachments/OCP-admin-workloads-deployment-details.png" /></p>
 <p>Observe how the pod count circle changes. OpenShift immediately beings the process of scaling down the number of pods from 2 to 1. Before proceeding wait for the pod count to equal 1 and the outer ring returns to solid blue.</p>
 <div class="admonition question">
 <p class="admonition-title">Do you know the difference between deleting a pod and scaling down the number of pods?</p>

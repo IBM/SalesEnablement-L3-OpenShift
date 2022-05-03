@@ -457,11 +457,18 @@
 <li>Verify the <strong>Project</strong> selected is your project. If it is not, click the pulldown and select your project.</li>
 <li>Click <strong>Networking</strong> in the left-hand taskbar.</li>
 <li>Click <strong>Routes</strong> in the <strong>Networking</strong> sub-menu.</li>
+</ol>
+<p>On this screen you can see the defaults routes that were automatically created when you deployed the NGINX container. Next, we will create a new route that will balance incoming requests to both of the NGINX servers.</p>
+<ol start="5">
 <li>Click <strong>Create Route</strong>.</li>
+</ol>
+<p><img alt="" src="../_attachments/OCP-balancing-routes-page.png" /></p>
+<ol start="6">
 <li>Configure the following properties:</li>
 </ol>
 <p>Name: <code>nginx-route</code>
    Service: <strong>nginx-server-1</strong></p>
+<p><img alt="" src="../_attachments/OCP-balancing-routes-page-1st-service.png" /></p>
 <ol start="7">
 <li>Click on <strong>+ Add Alternate Service</strong> and update with:</li>
 </ol>
@@ -469,6 +476,10 @@
 <p>Alternative Service Target: <strong>nginx-server-2</strong></p>
 <p>Alternative Service Weight: 50</p>
 <p>Target Port: 8080-&gt;8080</p>
+<p><img alt="" src="../_attachments/OCP-balancing-routes-page-2nd-service.png" /></p>
+<div class="admonition warning">
+<p class="admonition-title">Make sure both the <strong>Weight</strong> and <strong>Alternate Service weight</strong> fields are set to <strong>50</strong></p>
+</div>
 <ol start="8">
 <li>Click <strong>Create</strong>.</li>
 </ol>
@@ -476,7 +487,8 @@
 <ol start="9">
 <li>Record the <strong>Location</strong> (URL) of the <strong>nginx-route</strong>.</li>
 </ol>
-<p>The default OpenShift load balancer is used to distribute incoming requests sent to the route's <strong>Location</strong> URL. In the next section you will see this in action.</p>
+<p><img alt="" src="../_attachments/OCP-balancing-routes-details.png" /></p>
+<p>The default OpenShift load balancer is used to distribute incoming requests sent to the route's <strong>Location</strong> URL. Be sure to copy the <strong>Location</strong> URL as you will use it in the next section.</p>
 
               
             </article>
