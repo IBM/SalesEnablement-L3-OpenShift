@@ -22,4 +22,4 @@ You should notice the deployment icon change from a solid blue outer ring to a s
 
 5. Return to the Pod Details tab by clicking on center of NGINX deployment icon. Observe the name of the pod. Does it match the previous Pod’s ID?
 
-In the next section learn about scaling OpenShift containers.
+In the next section learn how to you can access and update your containerized applciation.

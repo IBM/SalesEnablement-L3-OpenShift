@@ -17,6 +17,7 @@ nav:
     - 'Deploy an HTTP Server': 'labguide/deployFirstHTTPServer.md'
     - 'Check Deployment Status': 'labguide/checkDeploymentStatus.md'
     - 'Testing Resiliency': 'labguide/testingResiliency.md'
+    - 'Updating the Application': 'labguide/updateTheApplication.md'
     - 'Scaling Deployments': 'labguide/scalingDeployments.md'
     - 'Deploying Multiple Apps': 'labguide/deployingMultipleApps.md'
     - 'Balancing Network Traffic': 'labguide/balancingNetworkTraffic.md'

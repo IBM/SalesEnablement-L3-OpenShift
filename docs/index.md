@@ -6,7 +6,7 @@ Use the table of contents at the left-hand side of this page to navigate each se
 
 
 !!! note
-    THIS NEEDS UPDATING!!! Note, you can access this demonstration environment at any time via IBM Tech Zone <a href="https://techzone.ibm.com/collection/roks-basics-lab" target="_blank">https://techzone.ibm.com/collection/roks-basics-lab</a>. Once you are comfortable with the environment, it can quickly and easily be leveraged for continued learning and customer demonstrations.
+    You can access this demonstration environment at any time via IBM Tech Zone <a href="https://techzone.ibm.com/collection/roks-basics-lab" target="_blank">https://techzone.ibm.com/collection/roks-basics-lab</a>. Once you are comfortable with the environment, it can quickly and easily be leveraged for continued learning and customer demonstrations.
 
 # Helpful tips for using this demonstration environment
 
